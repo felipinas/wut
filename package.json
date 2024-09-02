@@ -1,0 +1,38 @@
+{
+  "name": "wut",
+  "private": true,
+  "scripts": {
+    "start": "meteor run --port 8080"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.25.6",
+    "autoprefixer": "^10.4.20",
+    "meteor-node-stubs": "^1.2.10",
+    "postcss": "^8.4.44",
+    "postcss-load-config": "^6.0.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwindcss": "^3.4.10"
+  },
+  "devDependencies": {
+    "@quave/eslint-config-quave": "^3.0.0-beta.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-tailwindcss": "^3.17.4"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.jsx",
+      "server": "server/main.js"
+    }
+  },
+  "eslintConfig": {
+    "extends": [
+      "@quave/quave",
+      "plugin:tailwindcss/recommended"
+    ],
+    "rules": {
+      "import/no-unresolved": "off",
+      "import/extensions": "off"
+    }
+  }
+}
